@@ -15,7 +15,7 @@ const About = () => {
         <Rightbar />
         <div className="px-6 p-1">
           <p className="font-medium  my-3">
-            As a dedicated and proficient full-stack developer, I am seeking a
+            As a dedicated and proficient full-stack developer I am seeking a
             challenging role in a dynamic organization where I can leverage my
             extensive experience in web technologies, contributing to innovative
             projects, and continually enhancing my skills to foster personal and
