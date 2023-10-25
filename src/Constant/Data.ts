@@ -67,7 +67,7 @@ export const language:Iskill[]=[
     {
         Icon:BsCircleFill,
         name:'mongoDB',
-        level:'10%',
+        level:'30%',
     },
 ]
 export const tools:Iskill[]=[

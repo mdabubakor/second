@@ -1,9 +1,15 @@
+'use client'
 import React from 'react'
 import Rightbar from './Rightbar'
 import Sidebar from './Sidebar'
-import { language } from '@/Constant/Data'
+import { language, tools } from '@/Constant/Data'
+import { Iskill } from '@/Constant/Type'
+import { BsCircleFill } from 'react-icons/bs'
+import Bar from './Bar'
+
 
 const Resume = () => {
+    
   return (
     <div className='grid grid-cols-12 gap-6 px-5 my-14 lg:px-48 sm:px-20 md:px-32 font-serif'>
     <div className='col-span-12 bg-slate-500 lg:col-span-3 p-4 text-center  rounded-2xl'>
@@ -44,12 +50,18 @@ const Resume = () => {
         <div>
             <h5 className='text-2xl my-3 font-bold'>Languages & Frameworks</h5>
             <div className='my-2'>
+            
+                  {
+                    language.map(language=><Bar data={language} key={language.name}/>)
+                  }
+                
+            </div>
+        </div>
+        <div>
+            <h5 className='text-2xl my-3 font-bold'>Tools & Software</h5>
+            <div className='my-2'>
                 {
-                    language.map((item)=>(
-                        <div key={item.name}>
-                            <p>{item.name}</p>
-                        </div>
-                    ))
+                  tools.map(tools=><Bar data={tools} key={tools.name}/>)
                 }
             </div>
         </div>
