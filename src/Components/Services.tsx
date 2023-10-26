@@ -1,4 +1,5 @@
 'use client'
+import React from 'react'
 import { services } from '@/Constant/Data'
 import { motion } from "framer-motion";
 const Services = () => {
@@ -22,5 +23,4 @@ const Services = () => {
     </div>
   )
 }
-
 export default Services

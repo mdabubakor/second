@@ -29,7 +29,7 @@ const Resume = () => {
     className='p-4'>
       {/* Education & Ex */}
     <div className='grid md:grid-cols-2 gap-6'>
-    <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} className=''>
+    <div  className=''>
     <h5 className='my-3 text-2xl font-bold '>Education</h5>
     <div>
         <h6 className='my-2 text-xl font-bold'>
@@ -38,7 +38,7 @@ const Resume = () => {
         <p className='font-semibold'>Barisal polytechnic institute(2019-2023)</p>
         <p className='my-3'>I am currrently pursuing B.tech in computer science engineering from Barisal polytechnic institute </p>
     </div>
-    </motion.div>
+    </div>
     <div className=''>
         {/* change */}
     <h5 className='my-3 text-2xl font-bold '>Experiece</h5>
