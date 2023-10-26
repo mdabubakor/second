@@ -6,22 +6,36 @@ import { language, tools } from '@/Constant/Data'
 import { Iskill } from '@/Constant/Type'
 import { BsCircleFill } from 'react-icons/bs'
 import Bar from './Bar'
+import { motion } from "framer-motion";
 
 
 const Resume = () => {
     
   return (
-    <div className='grid grid-cols-12 gap-6 px-5 my-14 lg:px-48 sm:px-20 md:px-32 font-serif'>
+    <div
+   
+    className='grid grid-cols-12 gap-6 px-5 my-14 lg:px-48 sm:px-20 md:px-32 font-serif'>
     <div className='col-span-12 bg-slate-900 lg:col-span-3 p-4 text-center  rounded-2xl'>
       <Sidebar /> 
     </div>
-    <div className='col-span-12 bg-slate-900 text-white lg:col-span-9  rounded-2xl'>
+    <div 
+    
+    className='col-span-12 bg-slate-900 text-white lg:col-span-9 ease-in-out rounded-2xl'>
     <Rightbar />
-    <div className='p-4'>
+    <motion.div 
+     initial={{ opacity: 0, scale: 0.5 }}
+     animate={{ opacity: 1, scale: 1 }}
+     transition={{
+       duration: 0.9,
+       delay: 0.5,
+       ease: [1, 1, 1, 1.01]
+       
+     }}
+    className='p-4'>
       {/* Education & Ex */}
 
     <div className='grid md:grid-cols-2 gap-6'>
-    <div className=''>
+    <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} className=''>
     <h5 className='my-3 text-2xl font-bold '>Education</h5>
     <div>
         <h6 className='my-2 text-xl font-bold'>
@@ -30,7 +44,7 @@ const Resume = () => {
         <p className='font-semibold'>Barisal polytechnic institute(2019-2023)</p>
         <p className='my-3'>I am currrently pursuing B.tech in computer science engineering from Barisal polytechnic institute </p>
     </div>
-    </div>
+    </motion.div>
     <div className=''>
         {/* change */}
     <h5 className='my-3 text-2xl font-bold '>Experiece</h5>
@@ -58,15 +72,16 @@ const Resume = () => {
             </div>
         </div>
         <div>
-            <h5 className='text-2xl my-3 font-bold'>Tools & Software</h5>
-            <div className='my-2'>
+            <h5 className='text-2xl my-3 font-bold flex items-center justify-center shadow-inner shadow-slate-600'>Tools & Software</h5>
+            <motion.div  
+      className='my-2'>
                 {
                   tools.map(tools=><Bar data={tools} key={tools.name}/>)
                 }
-            </div>
+            </motion.div>
         </div>
     </div>
-    </div>
+    </motion.div>
       
     </div>
   </div>

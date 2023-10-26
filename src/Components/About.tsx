@@ -13,15 +13,19 @@ const About = () => {
       <div className="col-span-12 bg-slate-900  lg:col-span-3 p-4 text-center  rounded-2xl">
         <Sidebar />
       </div>
-      <div className="col-span-12 bg-slate-900 text-white   lg:col-span-9   rounded-2xl">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{duration: 2.5}}
+      className="col-span-12 bg-slate-900 text-white   lg:col-span-9   rounded-2xl">
         <Rightbar />
-        <div className="px-6 p-1 my-16 items-center justify-center flex flex-col">
+        <div
+       
+        className="px-6 p-1 my-16 items-center justify-center flex flex-col">
           <h2 className="flex items-center justify-center text-2xl my-4 py-4 font-serif w-40  font-semibold shadow-inner  shadow-slate-600 ">About me</h2>
           <input type="range" />
-          <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{duration: 2}}
+          <p
+         
           className="font-medium  my-3">
             As a dedicated and proficient full-stack developer I am seeking a
             challenging role in a dynamic organization where I can leverage my
@@ -29,7 +33,7 @@ const About = () => {
             projects, and continually enhancing my skills to foster personal and
             professional growth while adding value to the company objectives
             and vision.
-          </motion.p>
+          </p>
         </div>
         <div className="  bg-slate-900 py-5   rounded-lg " >
           <h5 className=" font-bold text-xl ms-3 shadow-inner shadow-zinc-600 w-36 flex items-center justify-center  ">What i Offer</h5>
@@ -38,7 +42,7 @@ const About = () => {
           <Services/>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

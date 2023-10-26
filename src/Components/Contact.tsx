@@ -20,7 +20,16 @@ const Contact = () => {
     <div className='col-span-12 bg-slate-900 lg:col-span-9  rounded-2xl'>
     <Rightbar />
     <div  className='    '>
-        <div className='md:grid-1 lg:grid grid-cols-2  text-white items-center  '>
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.5,
+            ease: [1, 1, 1, 1.01]
+            
+          }}
+        className='md:grid-1 lg:grid grid-cols-2  text-white items-center  '>
             
             <div className='flex flex-col items-center justify-center '>
                 <h4 className='text-4xl'>CONTACT INFO</h4>
@@ -46,7 +55,7 @@ const Contact = () => {
 
           <a target="_blank" href="http://www.instagram.com/abu_bakar460/"><FaInstagramSquare /></a>
           <a target="_blank" href="http://github.com/mdabubakor"><BsGithub /></a>
-          <a target="_blank"href="http://www.youtube.com/@iabs4203/videos"><BsYoutube /></a>
+          <a target="_blank" href="http://www.youtube.com/@iabs4203/videos"><BsYoutube /></a>
           </div>
         </div>
                 </div>
@@ -75,7 +84,7 @@ const Contact = () => {
       </div>
     </motion.div>
     </div>
-        </div>
+        </motion.div>
     </div>
       
     </div>

@@ -4,10 +4,13 @@ import Link from 'next/link'
 import React from 'react'
 
 
+
+
 const Rightbar = () => {
   return (
     <div>
       <div className='flex items-center h-10 bg-slate-900 justify-center gap-3  shadow-inner shadow-slate-500 rounded-2xl text-white '>
+      
         {
             nav.map((item)=>(
                 <Link className='text-white' key={item.title} href={item.href}>
@@ -18,7 +21,7 @@ const Rightbar = () => {
             ))
         }
       </div>
-
+      
     </div>
   )
 }

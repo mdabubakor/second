@@ -6,6 +6,7 @@ import AB from '../Assetse/simul.jpg'
 import {AiFillGithub,AiFillFacebook,AiFillYoutube} from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { GiTie } from 'react-icons/gi'
+import { motion } from "framer-motion";
 
 
 
