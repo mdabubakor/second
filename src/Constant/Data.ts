@@ -1,13 +1,13 @@
-import { Iskill } from "./Type"
+import { Iproject, Iskill } from "./Type"
 import { BsCircleFill } from 'react-icons/bs'
 
 
 
 
 export const nav =[
-    { title: "Home", href: "/" },
+    
     { title: "About", href: "/about" },
-    { title: "Projects", href: "/projects" },
+    { title: "Projects", href: "/project" },
     {title: "Contact", href: "/contact"},
     { title: "Resume", href: "/resume" },
 ]
@@ -86,4 +86,16 @@ export const tools:Iskill[]=[
         name:'Illustrator',
         level:'70%',
     },
+]
+
+
+
+export const projects =[
+    {
+        name:"Counter Application",
+        description:"You can count numbers from this app",
+        
+    },
+   
+ ,
 ]
