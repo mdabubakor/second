@@ -52,10 +52,10 @@ const Contact = () => {
                 </div>
             </div>
       
-    <div>
-    <motion.div initial={{ opacity: 0 }}
+    <div className='r'>
+    <motion.div  initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{duration: 3}} className=' flex flex-col  min-h-screen  justify-center '>
+      transition={{duration: 3}} className=' flex flex-col  min-h-screen items-center justify-center '>
       <div className='text-white text-4xl font-semibold m-5 '>
         <h2 >SEND a MESSAGE</h2>
       </div>
