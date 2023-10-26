@@ -65,12 +65,12 @@ const Resume = () => {
         </div>
         <div>
             <h5 className='text-2xl my-3 font-bold flex items-center justify-center shadow-inner shadow-slate-600'>Tools & Software</h5>
-            <motion.div  
+            <div  
       className='my-2'>
                 {
                   tools.map(tools=><Bar data={tools} key={tools.name}/>)
                 }
-            </motion.div>
+            </div>
         </div>
     </div>
     </motion.div>
