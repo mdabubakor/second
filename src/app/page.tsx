@@ -6,8 +6,9 @@ import Link from 'next/link'
 import { ThemeProvider } from 'next-themes'
 import About from '@/Components/About'
 import { motion } from "framer-motion";
-import { Typewriter } from "react-simple-typewriter";
+
 import SS from '../Assetse/Abubakar.png'
+import { Typewriter } from 'react-simple-typewriter'
 
 
 
