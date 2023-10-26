@@ -4,9 +4,6 @@ import './globals.css'
 
 import Cursor from '@/Components/Cursor'
 
-
-
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
