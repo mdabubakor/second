@@ -22,11 +22,11 @@ const Contact = () => {
     <div  className='    '>
         <div className='md:grid-1 lg:grid grid-cols-2  text-white items-center  '>
             
-            <div className='flex flex-col ms-3 '>
+            <div className='flex flex-col items-center justify-center '>
                 <h4 className='text-4xl'>CONTACT INFO</h4>
-                <div className='flex mt-10 text-xl gap-4'>
+                <div className='flex mt-10 text-xl items-center  space-x-2'>
                     <CiLocationOn/>
-                    <h3 className=''>A.R.B Model School,North Kazipara</h3>
+                    <h3 className=''>A.R.B Model School, Kazipara</h3>
                 </div>
                 <div className='flex text-xl gap-4 mt-8'>
                     <div className='mt-1'>
