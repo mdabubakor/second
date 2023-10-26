@@ -2,19 +2,9 @@
 import Rightbar from '@/Components/Rightbar'
 import Sidebar from '@/Components/Sidebar'
 import Image from 'next/image'
-import Link from 'next/link'
-import { ThemeProvider } from 'next-themes'
-import About from '@/Components/About'
-import { motion } from "framer-motion";
-
 import SS from '../Assetse/Abubakar.png'
 import { Typewriter } from 'react-simple-typewriter'
-
-
-
 export default function Home() {
-
-
   return (
     <>
        

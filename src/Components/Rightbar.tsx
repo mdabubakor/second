@@ -1,10 +1,7 @@
 'use client'
-import { nav, projects } from '@/Constant/Data'
+import {nav} from '@/Constant/Data'
 import Link from 'next/link'
 import React from 'react'
-
-
-
 
 const Rightbar = () => {
   return (
@@ -21,7 +18,6 @@ const Rightbar = () => {
             ))
         }
       </div>
-      
     </div>
   )
 }

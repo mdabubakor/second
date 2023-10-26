@@ -3,23 +3,19 @@ import React from 'react'
 import Rightbar from './Rightbar'
 import Sidebar from './Sidebar'
 import { language, tools } from '@/Constant/Data'
-import { Iskill } from '@/Constant/Type'
-import { BsCircleFill } from 'react-icons/bs'
+
 import Bar from './Bar'
 import { motion } from "framer-motion";
-
 
 const Resume = () => {
     
   return (
     <div
-   
     className='grid grid-cols-12 gap-6 px-5 my-14 lg:px-48 sm:px-20 md:px-32 font-serif'>
     <div className='col-span-12 bg-slate-900 lg:col-span-3 p-4 text-center  rounded-2xl'>
       <Sidebar /> 
     </div>
     <div 
-    
     className='col-span-12 bg-slate-900 text-white lg:col-span-9 ease-in-out rounded-2xl'>
     <Rightbar />
     <motion.div 
@@ -29,11 +25,9 @@ const Resume = () => {
        duration: 0.9,
        delay: 0.5,
        ease: [1, 1, 1, 1.01]
-       
      }}
     className='p-4'>
       {/* Education & Ex */}
-
     <div className='grid md:grid-cols-2 gap-6'>
     <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} className=''>
     <h5 className='my-3 text-2xl font-bold '>Education</h5>
@@ -57,8 +51,6 @@ const Resume = () => {
     </div>
     </div>
     </div>
-
-
       {/* languase & tools */}
     <div className='grid md:grid-cols-2 gap-6'>
         <div>
@@ -82,15 +74,8 @@ const Resume = () => {
         </div>
     </div>
     </motion.div>
-      
     </div>
   </div>
-
-
-
-
-
-  
   )
 }
 
