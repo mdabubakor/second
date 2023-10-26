@@ -18,14 +18,14 @@ const Resume = () => {
     <div 
     className='col-span-12 bg-slate-900 text-white lg:col-span-9 ease-in-out rounded-2xl'>
     <Rightbar />
-    <motion.div 
-     initial={{ opacity: 0, scale: 0.5 }}
-     animate={{ opacity: 1, scale: 1 }}
-     transition={{
-       duration: 0.9,
-       delay: 0.5,
-       ease: [1, 1, 1, 1.01]
-     }}
+    <div 
+    //  initial={{ opacity: 0, scale: 0.5 }}
+    //  animate={{ opacity: 1, scale: 1 }}
+    //  transition={{
+    //    duration: 0.9,
+    //    delay: 0.5,
+    //    ease: [1, 1, 1, 1.01]
+    //  }}
     className='p-4'>
       {/* Education & Ex */}
     <div className='grid md:grid-cols-2 gap-6'>
@@ -60,7 +60,6 @@ const Resume = () => {
                   {
                     language.map(language=><Bar data={language} key={language.name}/>)
                   }
-                
             </div>
         </div>
         <div>
@@ -73,7 +72,7 @@ const Resume = () => {
             </div>
         </div>
     </div>
-    </motion.div>
+    </div>
     </div>
   </div>
   )
