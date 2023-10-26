@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Rightbar from '@/Components/Rightbar'
-import Cursor from '@/Components/cursor'
+
 
 
 
@@ -21,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-slate-800">
-      <Cursor />
+      
      
         {children}
         </body>
