@@ -1,9 +1,9 @@
-
+"use client"
 import Rightbar from '@/Components/Rightbar'
 import Sidebar from '@/Components/Sidebar'
 import Image from 'next/image'
 import SS from '../Assetse/Abubakar.png'
-// import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter } from 'react-simple-typewriter'
 export default function Home() {
   return (
     <>
@@ -23,7 +23,7 @@ export default function Home() {
 
           <div className="text-lg font-semibold text-zinc-500">
               <p>I am a</p>
-            {/* <Typewriter
+            <Typewriter
               words={["MERN Stack Developer", "Web desinger", "Grapic Desinger", ]}
               loop={Infinity}
               cursor
@@ -34,7 +34,7 @@ export default function Home() {
               delaySpeed={1000}
               // onLoopDone={handleDone}
               // onType={handleType}
-            /> */}
+            />
           </div>
 
           <p className="text-base tracking-wide">
